@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 1 PLP Hackathon</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <header>
-      <nav>
+      <nav class="top-nav">
+
         <ul>
             <li><a href="#About">About</a></li>
             <li><a href="#Skills">Skills</a></li>
@@ -19,63 +21,118 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="row About">
         <div id="About">
-            <h1>Dale</h1>
-            <p>Bio</p>
-            <img src="" alt="">
+            <i><img src="Sipho.jpg" alt="My image" width="200" height="200" class="photo">
+            </i> 
+            <h1 class="Bio">I am Sipho.</h1>
+
+            <p>Experienced and versatile full stack web developer with over
+                 7 years in the industry, proficient in both 
+                 front-end and back-end technologies.Strong problem-solving skills 
+                 and a deep understanding of the entire web development process, 
+                 from concept to deployment and maintenance.</p>
+            
         </div>
     </section>
-    <section>
+    <section class="row Skills"><br> <br> <br>
+        <hr>
         <div id="Skills">
             <h2>Skills</h2>
             <div>
                 <ul>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
+                    <li>Front-End: HTML5, CSS3, JavaScript, React, Angular, Vue.js</li>
+                    <li>Back-End: Node.js, Express, Ruby on Rails, Django</li>
+                    <li>Agile Methodologies: Scrum, Kanban</li>
+                    <li> UI/UX Design Principles</li>
+                    <li> Databases: MongoDB, PostgreSQL, MySQL</li>
+                    <li>DevOps: Docker, Kubernetes, AWS, CI/CD</li>
+                    <li>Version Control: Git, GitHub, GitLab</li>
+                    <li>Testing: Jest, Mocha, Chai, Selenium</li>
+                    <li>Project management</li>
+                    <li>Communication and collaboration</li>
+                    <li>Adaptability and flexibility</li>
                 </ul>
             </div>
         </div>        
     </section>
-    <section>
-        <div id="project">
+    <section class="row-Project"> <hr> 
+        <div id="Project">
             <h2>Projects</h2>
-            <p>Project description</p>
-            <img src="" alt="p1">
-            <img src="" alt="p2">
+            <div class="imagebox">
+                <p>Online shopping app</p>
+                    <img src="project.jpg" alt="project 1" width="200" height="150">
+            </div>
+            <div class="imagebox">
+                <p>Food delivery app</p>
+            <img src="Food delivery app.jpg" alt="food delivery" width="200" height="150">
+
+            </div>
+           
+            
         </div>
     </section>
-    <section>
+    <section class="row Experience"> <hr>
         <div id="Experience">
             <h2>Experience</h2>
-            <h3>Company</h3>
-            <h4>Job Title</h4>
-            <p>Description</p>
+            <h3>Tech Innovators Inc. | 2020 - Present</h3>
+            <h4>Senior Full Stack Developer</h4>
+            <p>
+                <ul>
+                <li>Led a team of developers in creating a microservices-based architecture, improving system scalability and performance.</li>
+                <li>Designed and developed RESTful APIs and integrated them with front-end applications, enhancing user interaction and functionality.</li>
+                <li>Implemented CI/CD pipelines, reducing deployment times by 50%.</li>
+                </ul>
+            </p>
+            
+            <h3>Creative Solutions LLC | 2016 - 2020</h3>
+            <h4>Full Stack Developer</h4>
+            <p>
+                <ul>
+                    <li>Built and maintained responsive web applications using React and Node.js, resulting in a 40% increase in user engagement.</li>
+                    <li>Collaborated with designers to create intuitive and visually appealing user interfaces.</li>
+                    <li>Optimized database queries and improved application performance.
+                    </li>
+                </ul>
+            </p>
         </div>
     </section>
-    <section>
+    <section class="row-Education"> <hr>
         <div id="Education">
             <h2>Education</h2>
             <div id="Institution">
-                <h3>Institution A</h3>
-                <p>Qualification <span>Year</span></p>
-                <h3>Institution B</h3>
-                <p>Qualification <span>Year</span></p>
-                <h3>Institution C</h3>
-                <p>Qualification <span>Year</span></p>
+                <h3>University of Johannesburg | 2013 - 2017</h3>
+                <p>Bachelor of Science in Computer Science </p>
+                <h3>Short Courses </h3>
+                <p><strong>Power Learn Project:</strong> Software Engineering</p>
+                <p><strong>Simplilearn:</strong> Data analytics</p>
+            
             </div>
         </div>
     </section>
-    <section>
-        <div id="Contact">
-            <h2>Contact</h2>
+    <section class="Contacts"> <hr>
+        <div id="Contacts">                                 
+            <h2>Contacts</h2>
+            <div>
+                <p>
+                    <i>Cellphone:</i>
+                    +27678731844
+                </p>
+                <p>
+                    <i>Email address:</i>
+                    sipho24@gmail.com
+                </p>
+                <p>
+                    <i>Location:</i>
+                    Johannesburg 
+                </p>
+            </div>
             <form action="">
              <label for="">Name</label>
-             <input type="text"> <br>
+             <input type="text"><br>
              <label for="">Email</label>
              <input type="email"><br>
-             <label for="">Message</label>
+             <label for="">Message</label><br>
              <textarea placeholder="Enter Message" id=""></textarea><br>
              <input value="SUBMIT" type="Submit">
             </form>
@@ -83,10 +140,11 @@
         </div> 
 
     </section>
+    <footer class="row">
+        &copy; Coded by Group 1
+    </footer>
 
 </body>
-<footer>
-    &copy; Coded by Group 1
-</footer>
+
 </html>                        
  
