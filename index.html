@@ -5,42 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 1 PLP Hackathon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
 </head>
 <body>
     <header>
       <nav class="top-nav">
+        <!-- <p class="sp">Sipho</p> -->
 
         <ul>
-            <li><a href="#About">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Experience">Experience</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-    </header>
-    <section class="row About">
-        <div id="About">
-            <i><img src="Sipho.jpg" alt="My image" width="200" height="200" class="photo">
-            </i> 
-            <h1 class="Bio">I am Sipho.</h1>
+   
+    <section class="row-about">
+        <div id="about">
+            <div class="my-img">
+             <i><img src="Sipho.jpg" alt="My image" width="350" height="350" class="photo">
+             </i> 
+            </div>
+            <h1 class="bio">Hello I am Sipho Malik.</h1>
+            <p> <u><i>Full Stack Developer</i></u></p>
 
-            <p>Experienced and versatile full stack web developer with over
-                 7 years in the industry, proficient in both 
+            <p class="para">Experienced and versatile full stack web developer with over
+                 7 years in the industry,<br> proficient in both 
                  front-end and back-end technologies.Strong problem-solving skills 
                  and a deep understanding of the entire web development process, 
                  from concept to deployment and maintenance.</p>
             
         </div>
     </section>
-    <section class="row Skills"><br> <br> <br>
+</header>
+   <br> <br> <br>
         <hr>
-        <div id="Skills">
+        <br> <br>
+        <div id="skills" style="margin-top: 10px">
             <h2>Skills</h2>
             <div>
-                <ul>
+                <ul class="lis">
                     <li>Front-End: HTML5, CSS3, JavaScript, React, Angular, Vue.js</li>
                     <li>Back-End: Node.js, Express, Ruby on Rails, Django</li>
                     <li>Agile Methodologies: Scrum, Kanban</li>
@@ -48,47 +55,52 @@
                     <li> Databases: MongoDB, PostgreSQL, MySQL</li>
                     <li>DevOps: Docker, Kubernetes, AWS, CI/CD</li>
                     <li>Version Control: Git, GitHub, GitLab</li>
-                    <li>Testing: Jest, Mocha, Chai, Selenium</li>
+                    <li>Testing: Jest, Moch a, Chai, Selenium</li>
                     <li>Project management</li>
                     <li>Communication and collaboration</li>
                     <li>Adaptability and flexibility</li>
                 </ul>
             </div>
         </div>        
-    </section>
-    <section class="row-Project"> <hr> 
+    
+    <h2>Projects</h2>
+    <div class="row-Project"> <hr> 
+        
         <div id="Project">
-            <h2>Projects</h2>
             <div class="imagebox">
-                <p>Online shopping app</p>
-                    <img src="project.jpg" alt="project 1" width="200" height="150">
+                <p class="proj" >Online shopping app</p>
+                    <img src="project.jpg" alt="project 1" width="400" height="550">
             </div>
             <div class="imagebox">
-                <p>Food delivery app</p>
-            <img src="Food delivery app.jpg" alt="food delivery" width="200" height="150">
+                <p class="proj" >Food delivery app</p>
+            <img src="Food delivery app.jpg" alt="food delivery" width="300" height="250">
 
             </div>
            
             
         </div>
-    </section>
-    <section class="row Experience"> <hr>
-        <div id="Experience">
-            <h2>Experience</h2>
-            <h3>Tech Innovators Inc. | 2020 - Present</h3>
-            <h4>Senior Full Stack Developer</h4>
-            <p>
-                <ul>
+    </div>
+    <h2>Experience</h2>
+   
+        <div id="experience">
+            <div class="exp">
+            
+            <p class="h1" >Tech Innovators Inc. | 2020 - Present</p>
+            <p class="h1">Senior Full Stack Developer</p>
+            <br>
+                <ul class=" my-exp" >
                 <li>Led a team of developers in creating a microservices-based architecture, improving system scalability and performance.</li>
                 <li>Designed and developed RESTful APIs and integrated them with front-end applications, enhancing user interaction and functionality.</li>
                 <li>Implemented CI/CD pipelines, reducing deployment times by 50%.</li>
                 </ul>
-            </p>
             
-            <h3>Creative Solutions LLC | 2016 - 2020</h3>
-            <h4>Full Stack Developer</h4>
+            </div>
+            <div class="exp">
+            <p class="h1">Creative Solutions LLC | 2016 - 2020</p>
+            <p class="h1"> Full Stack Developer</p>
             <p>
-                <ul>
+                <br>
+                <ul class=" my-exp">
                     <li>Built and maintained responsive web applications using React and Node.js, resulting in a 40% increase in user engagement.</li>
                     <li>Collaborated with designers to create intuitive and visually appealing user interfaces.</li>
                     <li>Optimized database queries and improved application performance.
@@ -96,37 +108,47 @@
                 </ul>
             </p>
         </div>
-    </section>
-    <section class="row-Education"> <hr>
-        <div id="Education">
+        </div>
+   
+    
+        <div id="education">
             <h2>Education</h2>
-            <div id="Institution">
-                <h3>University of Johannesburg | 2013 - 2017</h3>
+            <div id="institution">
+                <h5>University of Johannesburg | 2013 - 2017</h5>
                 <p>Bachelor of Science in Computer Science </p>
-                <h3>Short Courses </h3>
+                <h5>Short Courses </h5>
                 <p><strong>Power Learn Project:</strong> Software Engineering</p>
                 <p><strong>Simplilearn:</strong> Data analytics</p>
             
             </div>
         </div>
-    </section>
-    <section class="Contacts"> <hr>
-        <div id="Contacts">                                 
-            <h2>Contacts</h2>
-            <div>
+   
+    <h2 
+    style="margin-top: 30px"
+    >Contacts</h2>
+        <div id="contacts">                                 
+            
+            <div class="contact-l cont">
                 <p>
-                    <i>Cellphone:</i>
+                    <span class="material-symbols-outlined">
+                        call
+                        </span>
                     +27678731844
                 </p>
                 <p>
-                    <i>Email address:</i>
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
                     sipho24@gmail.com
                 </p>
                 <p>
-                    <i>Location:</i>
+                    <span class="material-symbols-outlined">
+                        location_on
+                        </span>
                     Johannesburg 
                 </p>
             </div>
+            <div class="contact-l conta">
             <form action="">
              <label for="">Name</label>
              <input type="text"><br>
@@ -136,14 +158,13 @@
              <textarea placeholder="Enter Message" id=""></textarea><br>
              <input value="SUBMIT" type="Submit">
             </form>
-        
+        </div>
         </div> 
 
-    </section>
     <footer class="row">
         &copy; Coded by Group 1
     </footer>
-
+<script src="scripts.js"></script>
 </body>
 
 </html>                        

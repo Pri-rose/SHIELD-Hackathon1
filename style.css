@@ -1,26 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
     color: rgb(37, 36, 36);
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     line-height: 20px;
     margin: 0;
+    height: 100vh;
 }
-.top-nav ul {
+/* NAV BAR */
+/* .sp{
+    align-items: self-start;
+    font-size: 20px;
+    color: #f2f2f2;
+} */
+nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* padding: 10px 10%; */
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #000000;
+    height: 80px;
+    margin-bottom: 120px;
+}
+
+nav ul li{
+    display: inline-block;
     list-style: none;
+    /* margin: 10px 20px; */
+    margin-left: 35px;
+}
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  nav ul li a {
+    color:rgb(95, 220, 240);
+    text-decoration: none;
+    font-size: 20px;
+  /* font-optical-sizing: auto; */
+    position: relative;
+    font-style: italic;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(95, 220, 240);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+
+/* .top-nav ul {
+    display: flex; */
+    /* justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .top-nav a{
     color: rgb(0, 234, 255);
     text-decoration: none;
     border: 1px solid grey;
-    padding: 10px;
     border-radius: 4px;
-    background-color: rgb(0, 234, 255);
-    border: none;
+    /* background-color: rgb(0, 234, 255); */
+    /* border: none;
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -29,92 +95,97 @@ header{
     margin: 5px;
     transition: all 150ms ease-in-out;
 
-}
-.top-nav a:hover{
+} */
+/* .top-nav a:hover{
     color: blue;
+} */ */
+
+/* ABOUT */
+.row-about{
+    margin-top: 100px;
+    
+}
+
+
+.bio{
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.para{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+h2,h3{
+    text-align: center;
 }
 h2,h3,h4{
-    text-align: center;
     color: rgb(0, 234, 255);
+    font-size: 30px;
+}
+h5{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin-top: 30px;
+    font-style: italic;
+}
+/* SKILLS */
+.lis{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .photo{
     border-radius: 50% ;
     float: left;
     margin-right: 40px;
+    margin-left: 30px;
 }
 footer {
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
     font-style: italic;
     color: white;
     margin-top: 10px;
 }
-.Contacts{
-    text-align: center;
-    padding: 10px;
-}
-.Contacts input[type="text"], input[type="email"]{
-    padding: 8px;
-    width: 50%;
-    margin: 0 0 4px 0;
-    border-radius: 4px;
-    border: 1px solid #f2f2f2;
-} 
-label{
-    font-size: 18px;
-    width: 25%;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
-textarea{
-    height: 100px;
-    width: 50%;
-    resize: vertical;
-}
-input[type="Submit"]{
-    background-color: rgb(0, 234, 255);
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    box-shadow: 3px 3px 3px rgba(1, 14, 12, 0.5);
-    margin: 5px;
-    transition: all 150ms ease-in-out;
-    
-}
-input[type="Submit"]:hover{
-    cursor: pointer;
-    background-color: black;
-}
-h1{
-    margin-top: 100px;
-    color: brown;
-}
-.row-Education{
-    text-align: center;
-}
 
-.row-Project{
+
+
+
+/* .row-Project{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px; 
     padding: 20px;
-}
+} */
 .imagebox {
     text-align: center;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
 }
 
 
 
 .imagebox img {
-    width: 300px; 
+    max-width: 100%;
     height: auto; 
     border-radius: 8px;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     text-align: center;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+.imagebox img:hover {
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
 }
 
 p {
@@ -122,6 +193,135 @@ p {
     font-size: 16px;
     color: #333; 
 }
-#Project{
-    margin: auto;
+#project{
+    display: flex; 
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top:30px
+}
+#experience{
+    margin-bottom: 50px;
+    display: flex; 
+    gap: 10px;
+}
+.exp{
+    margin-top: 30px;
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.h1{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 234, 255);
+    font-weight: bold;
+}
+.my-exp{
+    margin-left: 20px;
+    list-style-type: square;
+}
+.my-exp > li{
+    padding: 5px;
+}
+.contact-left > span{
+    color:  rgb(0, 234, 255);
+}
+.material-symbols-outlined{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.icon {
+    font-size: 48px; 
+    color: #007BFF;
+    transition: font-size 0.3s ease; 
+    cursor: pointer;
+}
+
+.icon:hover {
+    font-size: 
+}
+/* .contact-l{
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+} */
+#contacts {
+    display: flex; /* Use flexbox to place the divs next to each other */
+    gap: 20px; /* Space between the divs */
+    padding: 20px;
+}
+
+.contact-l {
+    flex: 1; /* Distribute space equally between the divs */
+    padding: 10px;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(0, 234, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(93, 138, 142);
+    color: black;
+}
+.cont{
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.conta{
+    margin-right: 20px;
+}
+.proj{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#institution{
+  text-align: center;
+    
+}
+#institution > p{
+    font-size: 20px;
+
 }
